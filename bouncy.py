@@ -21,6 +21,8 @@ ball = pygame.image.load(f"{dir_path}/img/just_accept_it.jpg")
 ballrect = ball.get_rect()
 
 while True:
+    #wait 16 ms - that makes it just over 60 FPS
+    pygame.time.wait(16)
     # loop through every event in the event queue
     for event in pygame.event.get():
         # if the QUIT event happens, exit the program
