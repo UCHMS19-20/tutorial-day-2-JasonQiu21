@@ -1,10 +1,12 @@
 import sys
 import pygame
+import os
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
 # start running pygame
 pygame.init()
 
-width, height = 400, 300
+width, height = 1920, 1080
 # speed is a list because values need to be able to change
 speed = [1, 1]
 # colors are tuples because values don't change
@@ -15,7 +17,7 @@ white = (255, 255, 255)
 screen = pygame.display.set_mode( (width, height) )
 
 # Load an image
-ball = pygame.image.load("img/just_accept_it.jpg")
+ball = pygame.image.load(f"{dir_path}/img/just_accept_it.jpg")
 ballrect = ball.get_rect()
 
 while True:
