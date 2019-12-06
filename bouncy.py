@@ -8,7 +8,7 @@ pygame.init()
 
 width, height = 1920, 1080
 # speed is a list because values need to be able to change
-speed = [1, 1]
+speed = [3, 3]
 # colors are tuples because values don't change
 black = (0, 0, 0)
 white = (255, 255, 255)
